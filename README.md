@@ -1,3 +1,28 @@
+# Micro FrontEnds
+## O que são micro front ends:
+
+Basicamante é conseguires dividir várias features em pastas diferentes e com o webpack
+ires buscar essas mesmas referencias:
+
+no webpack.config.js:
+````
+exposes: {
+    "./Header": "./src/Header.jsx",
+    "./Footer": "./src/Footer.jsx"    
+}
+````
+e depois ir buscar atraves do url:
+````
+localhost:3000/remoteEntry.js
+````
+
+e no webpack.config.js do que queres utilizar as feature do home ou footer:
+````
+remotes: {
+"home@http://localhost:3000/remoteEntry.js"
+}
+````
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
