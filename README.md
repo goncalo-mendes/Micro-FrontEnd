@@ -22,9 +22,23 @@ remotes: {
 "home@http://localhost:3000/remoteEntry.js"
 }
 ````
-
 ## Module Federation
+Ver o diagrama architucture para entender como fazer de várias maneiras 
+
 ![The San Juan Mountains are beautiful!](/image.psd.png "San Juan Mountains")
+
+
+## Erros
+
+Cuidado com os s3 e ter cuidado com api contractor se alguem mudar isso em outra equipa
+Usar error boundaries para teres um backup para quem faça asneiras e troque a api contrctor
+
+error boundaries basicamente é uma react classe basica só para saber que deu errado
+
+Dá para user npm e module federation mas não sei até que ponto compensa ter isso tudo
+
+
+
 
 # Getting Started with Create React App
 
